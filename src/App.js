@@ -1,14 +1,17 @@
 import React from 'react'
-import { SafeAreaView, Text, StyleSheet } from 'react-native'
+import { SafeAreaView, StyleSheet } from 'react-native'
 
 import Primeiro from './components/Primeiro'
 import Props from './components/Props'
+import { Comp1, Comp2 } from './components/Multi'
 
 export default () => {
     return (
         <SafeAreaView style={style.App}>
             <Primeiro />
-            <Props x={2} y={7} />
+            <Comp1 />
+            <Comp2 />
+            <Props x={2} y={8} />
         </SafeAreaView>
     )
 }
